@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik&display=swap');
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.calculator {
+    height: 70vh;
+    width: 30vw;
+    background-color: #808080;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    border-radius: 35px;
+    gap: 3%;
+    justify-content: center;
+}
+
+.display {
+    background-color: #DFDFDF;
+    height: 5rem;
+    width: 35rem;
+    border-radius: 50px;
+    text-align: end;
+    padding-right: 20px;
+    padding-top: 18px;
+    font-size: 45px;
+    margin-top: 1.5rem;
+}
+
+button {
+    height: 16%;
+    font-size: 30px;
+    border-radius: 15px;
+    flex-basis: 20%;
+    background-color: silver;
+
+    
+
+}
