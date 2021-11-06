@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 *,
 *::before,
 *::after{
@@ -10,43 +10,83 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Rubik', sans-serif;
+    background-color: #b7b7a4;
 }
 
 .calculator {
-    height: 70vh;
+    height: 73vh;
     width: 25vw;
-    background-color: #808080;
+    background-color: #354f52;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 70px;
+    gap: 0.5rem;
+    padding-bottom: 0.6rem;
+    border: 0.5rem solid #2f3e46;
 }
 
 .display {
-    background-color: #DFDFDF;
-    height: 5rem;
-    width: 35rem;
-    border-radius: 50px;
+    background-color: #52796f ;
+    height: 6rem;
+    width: 30rem;
     text-align: end;
     padding-right: 20px;
     padding-top: 18px;
     font-size: 45px;
-    margin-top: 1.5rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    font-family: 'Quicksand', cursive;
+    color:#cad2c5;
+    border:solid 0.5rem #2f3e46;
 }
 
 #operator, #number, .result, .dot {
-    height: 16%;
+    height: 15%;
     font-size: 30px;
-    flex-basis: 25%;
-    background-color: silver;
-
+    flex-basis: 23%;
+    background-color: #84a98c;
+    font-family: 'Quicksand', cursive;
+    color:#cad2c5;
+    border:solid 0.5rem #2f3e46;
     
 
 }
 
 .allClear, .clear {
+    background-color:  #B7410E;
     height: 16%;
     font-size: 30px;
-    flex-basis: 50%;
-    background-color: silver;
+    flex-basis: 47%;
+    border:solid 0.5rem #2f3e46;
+    font-family: 'Quicksand', cursive;
+    color:#cad2c5;
+}
+
+#operator:hover, #number:hover, .result:hover, .dot:hover {
+    background-color:#52796f ;
+}
+
+.allClear:hover, .clear:hover {
+    background-color:#95200c ;
+}
+
+#operator:active, #number:active, .result:active, .dot:active{
+    background-color:#2f3e46 ;
+}
+
+.allClear:active, .clear:active {
+    background-color: #84100b;
+}
+
+.credits {
+    position: absolute;
+    right: 86%;
+    top: 95%;
+    color:#2f3e46;
+    font-family:'Quicksand', cursive;
+    font: size 0.8rem;
+    font-weight: 600;
 }

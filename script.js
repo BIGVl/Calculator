@@ -40,7 +40,7 @@ let operator='';
 
 numbers.forEach(element =>{
   element.addEventListener('click',()=>{
-    if (display.textContent.length>9) return display.textContent="TOO MUCH!!";
+    if (display.textContent.length>15) return ;
     display.textContent+= element.textContent; 
     if (currentNumber!==''){
       display.textContent='';
@@ -63,6 +63,7 @@ operators.forEach(element=>{
  else if (currentNumber==='' && operator!=='') {
    currentNumber= display.textContent;
    display.textContent= operate(operator,previousNumber,currentNumber);
+   display.textContent = Math.round(display.textContent*100)/100;
    if (display.textContent.length>9) return display.textContent="TOO MUCH!!";
    previousNumber = display.textContent;
    operator=element.textContent;
@@ -76,6 +77,7 @@ result.addEventListener('click', ()=>{
     currentNumber= display.textContent;
   }
   display.textContent= operate(operator,previousNumber,currentNumber);
+  display.textContent = Math.round(display.textContent*100)/100;
   if (display.textContent.length>9) return display.textContent="TOO MUCH!!";
   previousNumber='';
   currentNumber= '';
