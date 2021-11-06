@@ -15,14 +15,11 @@ body{
 
 .calculator {
     height: 70vh;
-    width: 30vw;
+    width: 25vw;
     background-color: #808080;
     display: flex;
     flex-wrap: wrap;
     margin-top: 70px;
-    border-radius: 35px;
-    gap: 3%;
-    justify-content: center;
 }
 
 .display {
@@ -37,13 +34,19 @@ body{
     margin-top: 1.5rem;
 }
 
-button {
+#operator, #number, .result, .dot {
     height: 16%;
     font-size: 30px;
-    border-radius: 15px;
-    flex-basis: 20%;
+    flex-basis: 25%;
     background-color: silver;
 
     
 
+}
+
+.allClear, .clear {
+    height: 16%;
+    font-size: 30px;
+    flex-basis: 50%;
+    background-color: silver;
 }
